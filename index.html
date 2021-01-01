@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Animated Calculator</title>
+</head>
+
+<body>
+    <form class="calculator" name="calc">
+        <div class="display ">
+            <div class="data-time">
+                <div id="time"></div>
+                <div id="date"></div>
+            </div>
+            <input type="text" class="value" readonly name="text"></input>
+        </div>
+        <div class="buttons">
+            <div class="buttom buttom-operation" id="clear" onclick="calc.text.value = '0'">
+                C
+            </div>
+            <div class="buttom buttom-operation" onclick="document.calc.text.value += '/'">
+                ÷
+            </div>
+            <div class="buttom buttom-operation" onclick="document.calc.text.value += '*'">
+                x
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '7'">
+                7
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '8'">
+                8
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '9'">
+                9
+            </div>
+            <div class="buttom buttom-operation" onclick="document.calc.text.value += '-'">
+                -
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '4'">
+                4
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '5'">
+                5
+            </div>
+            <div class="buttom buttom-number " onclick="document.calc.text.value += '6'">
+                6
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '.'">
+                ,
+            </div>
+
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '1'">
+                1
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '2'">
+                2
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '3'">
+                3
+            </div>
+
+            <div class="buttom buttom-operation" id="sum" onclick="document.calc.text.value += '+'">
+                +
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '00'">
+                00
+            </div>
+            <div class="buttom buttom-number" onclick="document.calc.text.value += '0'">
+                0
+            </div>
+            <div class="buttom" id="igual" onclick="document.calc.text.value = eval(calc.text.value)">
+                =
+            </div>
+        </div>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
